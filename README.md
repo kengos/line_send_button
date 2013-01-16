@@ -46,7 +46,7 @@ end
 ```ruby
 <%= never_line_send_image_tag %>
 # => <img alt="LINEで送る" height="60" src="/assets/linebutton_36x60.png" width="36" />
-<%= never_line_send_image_tag(:size => '20x20')
+<%= never_line_send_image_tag(:size => '20x20') %>
 # => <img alt="LINEで送る" height="20" src="/assets/linebutton_20x20.png" width="20" />
 ```
 
