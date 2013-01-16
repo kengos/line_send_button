@@ -9,8 +9,8 @@ Gem::Specification.new do |gem|
   gem.authors       = ["kengos"]
   gem.email         = ["kengo@kengos.jp"]
   gem.description   = %q{LINE Send button helper}
-  gem.summary       = %q{LINE Send button helper}
-  gem.homepage      = ""
+  gem.summary       = %q{Never LINE Send button helper}
+  gem.homepage      = "https://github.com/kengos/line_send_button"
   gem.files = Dir["lib/**/*"] + Dir["vendor/**/*"] + ["Rakefile", "README.md"]
   gem.add_dependency 'rails',    '>= 3.1'
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
