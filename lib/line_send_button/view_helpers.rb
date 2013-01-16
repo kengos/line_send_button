@@ -14,7 +14,7 @@ module LineSendButton
     end
 
     def naver_line_send_image_tag(options = {})
-      options = {:size => '20x20', :alt => 'LINEで送る'}.merge options
+      options = {:size => '36x60', :alt => 'LINEで送る'}.merge options
       case options[:size]
       when "20x20", "30x30", "36x60", "40x40", "86x20"
         file = options[:size]
