@@ -3,17 +3,17 @@ require 'cgi'
 
 module LineSendButton
   module ViewHelpers
-    def never_line_send_link(title, url = nil, options = {}, html_options = {}, image_options = {})
-      link_to(never_line_send_url(title, url), options, html_options) do
-        never_line_send_image_tag(image_options)
+    def naver_line_send_link(title, url = nil, options = {}, html_options = {}, image_options = {})
+      link_to(naver_line_send_url(title, url), options, html_options) do
+        naver_line_send_image_tag(image_options)
       end
     end
 
-    def never_line_send_url(message, url = nil)
+    def naver_line_send_url(message, url = nil)
       'http://line.naver.jp/R/msg/text/?' + CGI.escape(message.tap{|m| m + "\r\n" + url if url})
     end
 
-    def never_line_send_image_tag(options = {})
+    def naver_line_send_image_tag(options = {})
       options = {:size => '20x20', :alt => 'LINEで送る'}.merge options
       case options[:size]
       when "20x20", "30x30", "36x60", "40x40", "86x20"
