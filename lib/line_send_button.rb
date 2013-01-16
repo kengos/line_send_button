@@ -1,5 +1,4 @@
-require "line_send_button/version"
+# coding: utf-8
 
-module LineSendButton
-  # Your code goes here...
-end
+require 'line_send_button/version'
+require 'line_send_button/engine' if defined?(::Rails)
